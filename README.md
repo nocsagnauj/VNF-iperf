@@ -17,10 +17,12 @@ These values can be changed via the environnement values:
 - IPERF\_SRV\_PORT 9435
 - IPERF_INTERVAL 1
 
-The docker is built:
+The docker is built as follows:
+
 \# docker build -t vnf\_iperf\_srv ./server/
 
 The docker should be called as follows:
+
 \# docker run -ti --rm -P \[-e "IPERF\_SRV\_PORT=9435"\] --name vnf\_iperf\_srv vnf\_iperf\_srv:latest
 
 ## Client
@@ -38,8 +40,10 @@ These values can be changed via the environnement values:
 - IPERF\_INTERVAL 1
 - IPERF\_BW 100K
 
-The docker is built:
+The docker is built as follows:
+
 \#docker build -t vnf\_iperf\_client ./client/
 
 The docker should be called as follows:
+
 \# docker run -ti --rm -P \[-e "IPERF\_SRV\_PORT=9435"\] --name vnf\_iperf\_client vnf\_iperf\_client:latest
