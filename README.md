@@ -1,4 +1,4 @@
-# VNF\_iperf
+# VNF-iperf
 
 This project creates iperf dockers to simulate VNFs in hosts.
 There is a Dockerfile for the server and the client.
@@ -19,11 +19,11 @@ These values can be changed via the environnement values:
 
 The docker is built as follows:
 
-\# docker build -t vnf\_iperf\_srv ./server/
+\# docker build -t vnf-iperf\_srv ./server/
 
 The docker should be called as follows:
 
-\# docker run -ti --rm -P \[-e "IPERF\_SRV\_PORT=9435"\] --name vnf\_iperf\_srv vnf\_iperf\_srv:latest
+\# docker run -ti --rm -P \[-e "IPERF\_SRV\_PORT=9435"\] --name vnf-iperf\_srv vnf-iperf\_srv:latest
 
 ## Client
 
@@ -42,8 +42,8 @@ These values can be changed via the environnement values:
 
 The docker is built as follows:
 
-\#docker build -t vnf\_iperf\_client ./client/
+\#docker build -t vnf-iperf\_client ./client/
 
 The docker should be called as follows:
 
-\# docker run -ti --rm -P \[-e "IPERF\_SRV\_PORT=9435"\] --name vnf\_iperf\_client vnf\_iperf\_client:latest
+\# docker run -ti --rm -P \[-e "IPERF\_SRV\_PORT=9435"\] --name vnf-iperf\_client vnf-iperf\_client:latest
